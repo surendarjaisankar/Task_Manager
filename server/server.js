@@ -43,3 +43,4 @@ const corsOptions = {
     credentials: true,
     optionsSuccessStatus: 200
 }
+corsOptions;
