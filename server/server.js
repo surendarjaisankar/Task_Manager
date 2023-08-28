@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import taskRouter from "./router/taskRouter.js";
 import userRouter from "./router/userRouter.js";
+import allowedOrigins from "./allowedOrigins.js";
 // import dotenv from "dotenv";
 // dotenv.config();
 
@@ -30,3 +31,15 @@ app.get("/taskmanager/api", (req, res) => {
 });
 app.use("/taskmanager/api/tasks", taskRouter);
 app.use("/taskmanager/api/users", userRouter);
+
+const corsOptions = {
+    origin: (origin, callback) => {
+        if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
+    credentials: true,
+    optionsSuccessStatus: 200
+}
