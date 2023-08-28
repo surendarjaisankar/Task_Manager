@@ -21,7 +21,6 @@
         "react-scripts": "^5.0.1"
     },
     "devDependencies": {
-        ".babelrc": "^7.22.11",
         "@testing-library/jest-dom": "^6.1.2",
         "@testing-library/react": "^14.0.0",
         "@types/jest": "^29.5.4",
