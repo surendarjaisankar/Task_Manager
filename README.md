@@ -86,13 +86,6 @@ You can deploy the MERN stack Task Management Web Application using platforms li
 
 Congratulations! You now have a working MERN stack Task Management Web Application. Feel free to customize and extend the application based on your requirements.
 
-## 11. Resources
-
-- React.js Documentation: https://reactjs.org/docs/getting-started.html
-- Node.js Documentation: https://nodejs.org/en/docs/
-- MongoDB Documentation: https://docs.mongodb.com/
-- Vite Documentation: https://vitejs.dev/
-- Express.js Documentation: https://expressjs.com/en/starter/installing.html
 
 Remember to keep your application's security and performance in mind while building and deploying it. Good luck!
 
